@@ -16,8 +16,11 @@ void draw(){
     y = y-100;
   }
   line(0, y , 400, y);
-  stroke(10,50,190,40);
+  stroke(0,50,190,40);
   ellipse(mouseY*0.4, mouseX*0.4, mouseX, mouseY);
+  ellipse(mouseX, mouseY, 33, 33);
+  fill(90,0, 0, 10);
+  ellipse(height-mouseX, width-mouseY, mouseX, mouseY);
   println(frameCount);
   println(mouseX + " : " + mouseY);
   frameRate(3);
