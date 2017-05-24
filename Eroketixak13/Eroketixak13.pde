@@ -21,6 +21,7 @@ void draw(){
   ellipse(mouseX, mouseY, 33, 33);
   fill(90,0, 0, 10);
   ellipse(height-mouseX, width-mouseY, mouseX, mouseY);
+  line(mouseX, mouseY, pmouseX, pmouseY);
   println(frameCount);
   println(mouseX + " : " + mouseY);
   frameRate(3);
